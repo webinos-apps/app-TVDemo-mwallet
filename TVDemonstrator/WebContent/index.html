@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>webinos wallet</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/keycodes.js"></script>
+<script type="text/javascript" src="js/navgrid.min.js"></script>
+<script type="text/javascript" src="js/modernizr-2.6.0.min.js"></script>
+<script type="text/javascript" src="js/webinospayment2impl.js"></script>
+<script type="text/javascript" src="js/webinoswallet.js"></script>
+<script type="text/javascript" src="js/staticvideocontent.js"></script>
+<script type="text/javascript" src="../../../../webinos.js"></script>
+
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="livetv">
+			<!-- Errormessage when no HTML5 <video> element available -->
+			<div id="error-msg"></div>
+			<!-- Video -->
+			<video id="video_livetv" height="720px" width="1280px" autoplay loop>
+				Your browser does not support video
+			</video>
+			<div id="bottom-panel">
+				<div id="payment-menue">
+					<div id="button-buy" class="button">Buy</div>
+					<div id="button-dontbuy" class="button">Don't buy</div>
+				</div>
+				<div id="channel-info"></div>
+			</div>
+		</div>
+		<div id="detail_zdf">
+			<div>
+				<img src="img/bg_telekom.png" width="1280px" height="720px">
+			</div>
+			<div id="title">Küchenschlacht</div>
+			<div id="menublock">
+				<img src="img/Menu/menu_header.png" class="menus"></img>
+				<div id="menu" class="menus">
+					<a href="#" id="first" class="menuitem">Preview</a> <a href="#"
+						class="menuitem" id="second" onclick="this.focus()">Buy movie</a>
+				</div>
+				<img src="img/Menu/menu_footer.png" class="menus"></img>
+			</div>
+			<div id="main">
+				<div id="cover" class="detail">
+					<img src="img/movies/Die_Kuechenschlacht.jpg" width="120px">
+				</div>
+				<div id="side" class="detail">
+					<div id="txt" class="inside">Entertainment 2012; 42 min</div>
+					<div id="fsk" class="inside">FSK 0</div>
+					<div id="price" class="inside">2,99 €</div>
+					<div id="rate" class="inside">
+						<img src="img/Details/star4.png">
+					</div>
+				</div>
+				<div id="desc" class="detail">Each week, six amateur chefs
+					cook from Monday until Friday against each other. Mondays cook the
+					candidates their favorite dish, a starter on Tuesdays, Wednesdays a
+					main course, main course and dessert on Thursday on Friday and two
+					meals by a recipe of the moderating celebrity chef. At the end of
+					each program chooses an expert who retires and who comes next,
+					without knowing who cooked what dish.</div>
+			</div>
+		</div>
+		<div id="player_zdf">
+			<video id="video_zdf" src="video/zdf_preview.ogv" height="720px"
+				width="1280px" type="video/h264"> Your browser does not
+				support video
+			</video>
+		</div>
+		<div id="adress">
+			<p style="font-size: 26px;">Please select the wallet device:</p>
+			<div id="navGrid" tsi:style="action-button2"
+				tsi:layout="action-button-layout2">
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+@font-face {
+	font-family: Tiresias;
+	src: url(TiresiasScreenfont.ttf)
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	background-color : black;
+}
+
+#body-wrapper {
+	position: fixed;
+	font-family: Tiresias, sans-serif;
+	top: 0;
+	left: 0;
+	height: 720px;
+	width: 1280px;
+	overflow: hidden;
+	background-color: black;
+	background-size: 1280px 720px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#bottom-panel {
+	background-image: url("../img/tmenu/TransportPanel_Background.png");
+	background-size: 1280px 249px;
+	height: 249px;
+	left: 0;
+	position: absolute;
+	top: 814px;
+	width: 1280px;
+	opacity: 0;
+	font-size: 24px;
+}
+
+#channel-info {
+	right: 0px;
+	text-align: right;
+	position: absolute;
+	padding-top: 100px;
+	padding-right: 100px;
+	width: 1060px;
+}
+
+#payment-menue {
+	padding-top: 75px;
+	padding-left: 35px;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#button-buy {
+	background-image: url("../img/tmenu/Button_Focus.png");
+}
+
+.button {
+	background-image: url("../img/tmenu/Button_NoFocus.png");
+	position: relative;
+	float: left;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: transparent;
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-size: 255px 45px;
+	border-bottom: 0 none;
+	display: block;
+	height: 45px;
+	line-height: 50px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-left: 0;
+	padding-right: 0;
+	text-indent: 15px;
+	width: 255px;
+}
+
+#bg {
+	margin: 0;
+	background: url('../img/bg_telekom.png') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 1280px;
+	height: 720px;
+}
+
+div {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	background-color: #333;
+	width: 282px;
+	overflow: hidden;
+}
+
+#menublock {
+	width: 282px;
+	top: 120px;
+	left: 50px;
+	height: 500px;;
+}
+
+#logo {
+	right: 30px;
+	top: 0px;
+	width: 200px;
+	height: 100px;
+	background-image: url('../img/200x100_videoload_logo.png');
+}
+
+#title {
+	top: 50px;
+	left: 50px;
+	font-size: 34px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#desc {
+	line-height: 160%;
+	font-size: 25px;
+}
+
+#main {
+	left: 370px;
+	top: 120px;
+	width: 840px;
+	height: 500px;
+	background: transparent;
+}
+
+.detail {
+	float: left;
+	margin: 0 5px 0 0;
+	font-size: 26px;
+	position: relative;
+}
+
+#price {
+	font-size: 28px;
+	margin: 7px 0px 8px 10px;
+}
+
+#side {
+	width: 690px;
+	height: 172px;
+}
+
+.inside {
+	position: relative;
+	float: left;
+	clear: both;
+	margin-left: 10px;
+}
+
+a.menuitem {
+	position: relative;
+	float: left;
+	padding: 10px 10px;
+	clear: both;
+	width: 100%;
+	border-top: 2px solid #3F3F3F;
+	left: 0px;
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+}
+
+.menus {
+	position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sel {
+	position: relative;
+	float: left;
+	padding: 10px 10px;
+	clear: both;
+	width: 100%;
+	border-top: 2px solid grey;
+	left: 0px;
+	background-color: #E20074;
+}
+
+.formitem {
+	position: relative;
+	float: left;
+	clear: both;
+	color: black;
+	font-size: 14px;
+	margin-top: 0px;
+}
+
+.label {
+	position: relative;
+	float: left;
+	clear: both;
+	color: black;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.ui-autocomplete {
+	max-height: 100px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+	font-size: 12px;
+	border: 2px solid grey;
+	background: white;
+	width: 450px;
+}
+
+textarea {
+	resize: none
+}
+
+ul {
+	list-style-type: none;
+}
+
+li,a {
+	padding-left: 2px;
+	cursor: pointer;
+}
+
+input,button {
+	border: 2px solid grey;
+}
+
+#description {
+	width: 500px;
+	height: 285px;
+}
+
+a:focus {
+	background-color: #E20074;
+}
+
+/*******************************************************/
+/* Action Button */
+/*******************************************************/
+.action-button-text2
+{
+	position: absolute;
+        padding-top: 1px; 
+        padding-left: 17px;
+        font-size: 26px;
+        line-height: 54px;
+        text-align: center;
+}
+.action-button-layout2 
+{ 
+	position: absolute;
+    	left: 0px; top: 47px; 
+}
+.action-button2
+{
+	position: absolute;
+	width:1280px; height:54px;
+}
+/*******************************************************/
